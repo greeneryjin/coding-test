@@ -24,7 +24,7 @@ public class Main {
         queue.offer(n);
         //큐에 노드 값이 없으면 반복문 종료
         while (!queue.isEmpty()) {
-            int size = queue.size(); //레벨에서 나온 노드 수(할당안하면 레벨끼리 노드가 섞임)
+            int size = queue.size(); //레벨에서 나온 노드 수(할당 안하면 레벨끼리 노드가 섞임)
             for (int i = 0; i < size; i++) {
                 int nowNode = queue.poll();
                 if (nowNode == m) {
