@@ -31,14 +31,14 @@ public class Main {
     public static void DFS(int v) { // 재귀함수를 활용해서
         stack.push(v);
         Visit[v] = true;
-        while(!stack.empty()) {
+        while (!stack.empty()) {
             int pt = stack.pop();
             System.out.print(pt + " ");
-            for(int i = 1 ; i <= n ; i ++) {
-                if(graph[pt][i] == 1 && !Visit[i]) {
+            for (int i = 1; i <= n; i++) {
+                if (graph[pt][i] == 1 && !Visit[i]) {
                     DFS(i);
                 }
             }
         }
-
+    }
 }
