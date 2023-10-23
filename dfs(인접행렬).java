@@ -11,13 +11,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        graph = new int[n+1][n+1]; // 행렬로 그래프 표현
-        Visit = new boolean[n+1]; // false 초기화
-
         n = sc.nextInt();
         m = sc.nextInt();
         v = sc.nextInt();
 
+        graph = new int[n+1][n+1]; // 행렬로 그래프 표현
+        Visit = new boolean[n+1]; // false 초기화
+        
         for(int i = 1 ; i <= m ; i++) {
             int tmp1 = sc.nextInt();
             int tmp2 = sc.nextInt();
