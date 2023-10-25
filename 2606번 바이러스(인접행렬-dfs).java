@@ -29,7 +29,7 @@ public class Main {
         int v = Integer.parseInt(st.nextToken()); //간선의 개수
 
         arr = new int[n + 1][n + 1];
-        visit = new boolean[n];
+        visit = new boolean[n + 1];
 
         for (int i = 1; i <= v; i++) { //배열은 1부터 n+1했기 때문에 간선의 개수만큼 넣어야함
             st = new StringTokenizer(br.readLine());
